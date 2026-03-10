@@ -37,7 +37,6 @@ nav {
 .navigation {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
     list-style: none;
     padding: 1rem;
 }
@@ -69,6 +68,7 @@ main h1 {
     grid-column: 1 / 3;
     text-align: center;
     padding: 1.5rem;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .card {
@@ -86,8 +86,6 @@ main h1 {
     background-color: var(--primary-color);
     border-collapse: collapse;
     height: max-content;
-    /* border-top-left-radius: 0.94rem; */
-    /* border-top-right-radius: 0.94rem; */
 }
 
 .card-content {
@@ -111,7 +109,6 @@ main h1 {
 }
 
 #about-me h3 {
-    /* margin-top: 5rem; */
     grid-column: 1 / 3;
     grid-row: 2 / 3;
     width: 90%;
@@ -125,7 +122,6 @@ main h1 {
     width: 150px;
     grid-column: 3 / 4;
     grid-row: 1 / 3;
-    /* float: right; */
 }
 
 #country-flag {
