@@ -4,14 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ernesto Zeledon | WDD 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Ernesto Zeledon</title>
     <meta name="author" content="Ernesto Zeledon">
-    <meta name="description" content="Ernesto Zeledon's BYU-Idaho WDD 130 - Web Fundamentals course home page.">
-    <link rel="stylesheet" href="styles/styles.css">
+    <meta name="description"
+        content="Ernesto Zeledon's BYU-Idaho WDD 131 – Dynamic Web Fundamentals - Coursework Home Page.">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 131: Dynamic Web Fundamentals</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/ernestozeledon/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27"
+                        target="_blank">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Ernesto Zeledon</h1>
+        <section id="about-me" class="card">
+            <h2 class="card-heading">About Me</h2>
+            <div class="card-content">
+                <p id="desc-about-me">
+                    My name is Ernesto Zeledon. I was born in El Salvador, and the same country where I am currently
+                    living. I work as an Client Experience Specialist in the Telecom industry. I have previous
+                    experience as a Technical Support agent, troubleshooting Software (Apps) and Network issues.
+
+                </p>
+                <img id="author-photo" src="images/profile.jpg"
+                    alt="A photo of Ernesto in the El Salvador Temple common area.">
+                <h3>San Miguel, El Salvador</h3>
+                <figure>
+                    <img id="country-flag" src="images/sv-flag-hd.jpg" alt="El Salvador flag.">
+                    <figcaption>Official Flag of El Salvador</figcaption>
+                </figure>
+                <p>
+                    El Salvador is the smallest country in the Central America region, with an area of
+                    21,041
+                    km<sup>2</sup> or 8,124 mi<sup>2</sup>. The most famous typical dish are
+                    <strong>Pupusas</strong>, that you can have alongside a refreshingly cold Horchata.
+                </p>
+            </div>
+        </section>
+        <section class="card">
+            <h2 class="card-heading">Web Dev Resources</h2>
+            <div class="card-content">
+                <ul id="dev-resources">
+                    <li><a href="https://www.w3.org/">W3C</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Resources</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> &#10070 Ernesto Zeledon | El Salvador &#10070</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
