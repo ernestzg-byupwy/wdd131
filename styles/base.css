@@ -15,7 +15,17 @@ body {
     font-style: normal;
 }
 
-header,
+/* 
+    Moved the header rule separate from main and footer
+    to test if it would pass the validation of the audit tool.
+    The header tool was present as header, main, footer all 
+    sharing the same declarations.
+*/
+header {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 main,
 footer {
     max-width: 960px;
