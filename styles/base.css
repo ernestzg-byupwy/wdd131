@@ -31,6 +31,7 @@ footer {
 }
 
 nav {
+    color: rgb(255, 255, 255);
     background-color: var(--secondary-color);
 }
 
@@ -48,7 +49,8 @@ nav {
 }
 
 .navigation li a {
-    color: rgb(255, 255, 255);
+    /* 'color' set on the nav parent */
+    color: inherit;
     text-decoration: none;
     padding: 0.3rem;
 }
