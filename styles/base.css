@@ -41,6 +41,13 @@ footer {
 }
 
 nav {
+    /* 
+        'color' declaration moved to nav, to avoid contrast warning 
+        showed by the Audit Tool, although the text color on the 
+        'a' element was set to rgb(255, 255, 255) it was detecting text color
+        on the 'nav' element as rgb(0, 0, 0) conflicting with background-color:
+        --secondary-color: rgb(51, 51, 51);
+    */
     color: rgb(255, 255, 255);
     background-color: var(--secondary-color);
 }
