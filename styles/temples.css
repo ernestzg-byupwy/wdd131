@@ -10,6 +10,7 @@
     --secondary-color-one: rgb(211, 208, 203);
     --secondary-color-two: rgb(88, 123, 127);
     --accent-color: rgb(226, 192, 68);
+    --header-footer-font-color: rgb(255, 255, 255);
 }
 
 body {
@@ -27,7 +28,7 @@ footer {
 header,
 footer {
     background-color: var(--primary-color-one);
-    color: rgb(255, 255, 255);
+    color: var(--header-footer-font-color);
 }
 
 header {
@@ -106,7 +107,7 @@ nav.open {
     width: 2rem;
     height: 2rem;
     background: none;
-    color: inherit;
+    color: var(--header-footer-font-color);
     align-self: center;
     justify-self: end;
     position: absolute;
@@ -118,7 +119,7 @@ nav.open {
 
 #menu::before {
     content: "☰";
-    color: inherit;
+    color: var(--header-footer-font-color);
 }
 
 #menu.open {
