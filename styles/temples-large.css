@@ -1,0 +1,27 @@
+@media screen and (min-width: 35rem) {
+
+    header {
+        font-size: 1.5rem;
+    }
+
+    nav {
+        display: block;
+    }
+
+    #navigation {
+        flex-direction: row;
+    }
+
+    #navigation li a {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    footer {
+        font-size: 1.2rem;
+    }
+
+}
