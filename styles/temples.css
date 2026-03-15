@@ -118,6 +118,7 @@ nav.open {
 
 #menu::before {
     content: "☰";
+    color: inherit;
 }
 
 #menu.open {
