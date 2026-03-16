@@ -2,15 +2,14 @@ const hamMenuBtn = document.querySelector("#menu");
 const navElm = document.querySelector("nav");
 const navigUl = document.querySelector("#navigation");
 
-hamMenuBtn.addEventListener("click", () => {
+// Toggles the 'open' class on some elements of interest
+function toggleOpenClass() {
     hamMenuBtn.classList.toggle("open");
     navElm.classList.toggle("open");
     navigUl.classList.toggle("open");
+}
 
-    // navElm.parentElement.firstChild.nodeValue = ""
-    console.log(navElm.parentElement.childNodes);
-});
-
+hamMenuBtn.addEventListener("click", toggleOpenClass);
 
 // Usage of MediaQueryList to get the update on the status of a media query on the document 
 // it triggers a change event every time there is a change on the media queries
@@ -27,9 +26,7 @@ mediaQList.addEventListener("change", (evt) => {
         // because the HamMenu will change to 'display: none' on media query, 
         // but remains with the 'open' class.
         if (hamMenuBtn.classList.contains("open")) {
-            hamMenuBtn.classList.toggle("open");
-            navElm.classList.toggle("open");
-            navigUl.classList.toggle("open");
+            toggleOpenClass();
         }
     }
 });
