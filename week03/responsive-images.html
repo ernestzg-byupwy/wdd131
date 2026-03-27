@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images | WDD 131</title>
+    <meta name="author" content="Ernesto Zeledon">
+    <meta name="description"
+        content="Ernesto Zeledon's BYU-Idaho WDD 131 - Dynamic Web Fundamentals, Responsive Images learning activity.">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/hero-large.webp">
+                <source media="(min-width: 500px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="El Salvador Temple on a Sunset." width="1500" height="750">
+            </picture>
+        </div>
+    </main>
+</body>
+
+</html>
