@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page | Ernesto Zeledon</title>
+    <meta name="author" content="Ernesto Zeledon">
+    <meta name="description"
+        content="Ernesto Zeledon's BYU-Idaho WDD 131 - W03 Assignment - Country Page. Show information about a place you have lived in, visited or would like to visit.">
+    <link rel="stylesheet" href="styles/place.css" fetchpriority="high">
+    <link rel="stylesheet" href="styles/place-large.css" fetchpriority="high">
+
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Switzerland</h1>
+    </header>
+
+    <main>
+        <figure id="hero-image">
+            <picture>
+                <source media="(min-width: 1800px)" srcset="images/place/sw-wide-2560x1440.webp">
+                <source media="(min-width: 1500px)" srcset="images/place/sw-wide-1920x1080.webp">
+                <source media="(min-width: 1000x)" srcset="images/place/sw-wide-1280x720.webp">
+                <source media="(min-width: 800px)" srcset="images/place/sw-wide-960x540.webp">
+                <source media="(max-width: 400px)" srcset="images/place/sw-tall-two-480x720.webp">
+                <source media="(max-width: 600px)" srcset="images/place/sw-tall-two-640x960.webp">
+                <source media="(max-width: 800px)" srcset="images/place/sw-tall-two-960x1440.webp">
+
+                <img src="images/place/sw-wide-1920x1080.webp" alt="Photo of a common scene on Switzerland."
+                    fetchpriority="high">
+            </picture>
+        </figure>
+        <section id="data-section">
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt>
+                <dd>41,291 km<sup>2</sup></dd>
+                <dt>Population:</dt>
+                <dd>9,141,219</dd>
+                <dt>Capital:</dt>
+                <dd>Bern</dd>
+                <dt>Languages:</dt>
+                <dd>German, French, Italian, Romansh</dd>
+                <dt>Currency:</dt>
+                <dd>Swiss franc</dd>
+                <dt>Time Zone:</dt>
+                <dd>UTC+1</dd>
+                <dt>Calling Code:</dt>
+                <dd>+41</dd>
+                <dt>Internet TLD:</dt>
+                <dd>.ch, .swiss</dd>
+            </dl>
+        </section>
+        <hr>
+        <section id="weather-section">
+            <h2>Weather</h2>
+            <span id="weather-icon"></span>
+            <dl>
+                <dt>Temperature:</dt>
+                <dd id="temperature"></dd>
+                <dt>Conditions:</dt>
+                <dd>Showers of Rain and Snow</dd>
+                <dt>Wind:</dt>
+                <dd id="wind-speed"></dd>
+                <dt>Wind Chill:</dt>
+                <dd id="wind-chill"></dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> &#10070; Ernesto Zeledon | El Salvador &#10070;</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

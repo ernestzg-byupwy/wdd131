@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(218, 41, 28);
+    --secondary-color: rgb(243, 246, 251);
+    --accent-color: rgb(132, 191, 4);
+    --accent-color-two: rgb(0, 120, 73);
+    --accent-color-three: rgb(243, 246, 251);
+    --accent-color-four: rgb(69, 168, 255);
+    --primary-font-color: rgb(255, 255, 255);
+}
+
+body {
+    min-width: min-content;
+}
+
+header,
+main,
+footer {
+    max-width: 640px;
+    margin: 0 auto;
+}
+
+header,
+footer {
+    text-align: center;
+
+    color: var(--primary-font-color);
+    background-color: var(--primary-color);
+}
+
+header h1 {
+    padding: 2rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+figure {
+    border-top: 1rem solid var(--accent-color-three);
+    border-bottom: 1rem solid var(--accent-color);
+}
+
+img {
+    aspect-ratio: 2 / 3;
+}
+
+picture img {
+    display: block;
+    width: 100%;
+}
+
+section {
+    padding: 1rem;
+}
+
+section h2 {
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#weather-icon {
+    content: url(/images/place/icons/light-rain-snow-showers.svg);
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem auto;
+}
+
+#weather-icon img {
+    display: block;
+}
+
+section dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    padding: 1rem 0;
+    align-items: center;
+}
+
+section dt {
+    text-align: end;
+    font-weight: 600;
+}
+
+section dd {
+    text-align: start;
+}
+
+footer {
+    font-size: 1rem;
+    padding: 1.5rem;
+}

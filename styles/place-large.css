@@ -1,0 +1,103 @@
+@media screen and (min-width: 800px) and (max-width: 960px) {
+
+    /* Using 'body main' selector so it wins on specificity in an attempt to avoid using !important */
+    body main {
+        grid-template-columns: 0.1fr 0.5fr 0.75fr 1fr 1fr 0.8fr 0.5fr 0.1fr;
+    }
+
+    main figure {
+        grid-column: 1 / 11;
+    }
+
+    #data-section,
+    #weather-section {
+        position: absolute;
+    }
+
+    #weather-section {
+        bottom: 0%;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    header,
+    main,
+    footer {
+        max-width: 960px;
+    }
+
+    header {
+        border-bottom: 1rem solid var(--accent-color-three);
+    }
+
+    main {
+        position: relative;
+        grid-template-columns: 0.1fr 0.5fr 0.5fr 1fr 1fr 0.5fr 0.5fr 0.1fr;
+        grid-template-rows: 0.1fr 1fr 0.25fr 0.5fr 0.5fr 0.1fr;
+    }
+
+    figure {
+        grid-column: 1 / 9;
+        grid-row: 1 / 7;
+        z-index: 0;
+        border: none;
+    }
+
+    section {
+        padding-top: 2.5rem;
+        padding-bottom: 0;
+        position: relative;
+        z-index: 1;
+        opacity: 0.85;
+        background-color: var(--accent-color-three);
+    }
+
+    section h2 {
+        color: var(--primary-font-color);
+        position: absolute;
+        top: 0.5rem;
+        left: -0.5rem;
+        padding: 0.5rem;
+        background-color: var(--accent-color-two);
+        width: 80%;
+        text-align: left;
+    }
+
+    #weather-section h2::after {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        content: "🌦️";
+        margin: 0 0.5rem;
+        text-align: right;
+    }
+
+    #weather-icon {
+        display: none;
+    }
+
+    #data-section {
+        grid-column: 2 / 4;
+        grid-row: 2 / 5;
+    }
+
+    #weather-section {
+        grid-column: 6 / 8;
+        grid-row: 3 / 6;
+    }
+
+    img {
+        aspect-ratio: 16 / 9;
+    }
+
+    hr {
+        display: none;
+    }
+
+    footer {
+        font-size: 1.25rem;
+    }
+
+}
