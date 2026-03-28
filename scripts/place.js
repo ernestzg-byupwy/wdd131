@@ -13,8 +13,8 @@ const calculateWindChill = (temperature, windSpeed) => 13.12 + 0.6215 * temperat
 
 // Convert windChill to degrees Fahrenheit if needed
 // Conditions to call the function:
-// - temperature <= 10 
-// - windSpeed > 4.8
+// - temperature <= 10 degrees Celsius
+// - windSpeed > 4.8 km/h
 let windChill = (temperature <= 10 && windSpeed > 4.8) ? calculateWindChill(temperature, windSpeed) : undefined;
 
 tempDD.innerHTML = `${temperature} &deg;${tempUnit}`;
