@@ -50,8 +50,7 @@
         padding-bottom: 0;
         position: relative;
         z-index: 1;
-        opacity: 0.85;
-        background-color: var(--accent-color-three);
+        background-color: var(--accent-color-three-opacity);
     }
 
     section h2 {
@@ -94,10 +93,6 @@
 
     hr {
         display: none;
-    }
-
-    footer {
-        font-size: 1.25rem;
     }
 
 }

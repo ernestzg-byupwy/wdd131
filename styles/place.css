@@ -10,6 +10,7 @@
     --accent-color: rgb(132, 191, 4);
     --accent-color-two: rgb(0, 120, 73);
     --accent-color-three: rgb(243, 246, 251);
+    --accent-color-three-opacity: rgb(243, 246, 251, 0.85);
     --accent-color-four: rgb(69, 168, 255);
     --primary-font-color: rgb(255, 255, 255);
 }
@@ -35,6 +36,7 @@ footer {
 
 header h1 {
     padding: 2rem;
+    font-size: 2.5rem;
 }
 
 main {
@@ -95,6 +97,7 @@ section dd {
 }
 
 footer {
-    font-size: 1rem;
+    font-size: 1.25rem;
+    font-weight: bolder;
     padding: 1.5rem;
 }
