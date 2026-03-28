@@ -66,7 +66,7 @@ section h2 {
 }
 
 #weather-icon {
-    content: url(/images/place/icons/light-rain-snow-showers.svg);
+    content: url(../images/place/icons/light-rain-snow-showers.svg);
     display: block;
     width: 5rem;
     height: 5rem;
