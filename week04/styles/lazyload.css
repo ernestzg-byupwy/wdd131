@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    row-gap: 1rem;
+    place-items: center;
+
+    h1 {
+        padding: 1rem;
+    }
+
+    #gallery {
+        display: grid;
+        row-gap: 2rem;
+    }
+
+    img {
+        display: block;
+        width: 400px;
+        height: 600px;
+        aspect-ratio: 2 / 3;
+        background: #000;
+        animation: fadeIn 1s ease-in;
+    }
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

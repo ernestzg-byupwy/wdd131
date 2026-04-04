@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazyloading Images | WDD 131</title>
+    <meta name="author" content="Ernesto Zeledon">
+    <meta name="description"
+        content="Ernesto Zeledon's BYU-Idaho WDD 131 - Dynamic Web Fundamentals - Lay Loading Images activity.">
+    <link rel="stylesheet" href="styles/lazyload.css">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/lazyload.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <h1>Lazy Loading Images</h1>
+
+        <div id="gallery">
+            <img src="images/sw-1.webp" alt="" loading="lazy">
+            <img src="images/sw-2.webp" alt="" loading="lazy">
+            <img src="images/sw-3.webp" alt="" loading="lazy">
+            <img src="images/sw-4.webp" alt="" loading="lazy">
+            <img src="images/sw-5.webp" alt="" loading="lazy">
+            <img src="images/sw-6.webp" alt="" loading="lazy">
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> &#10070; Ernesto Zeledon | El Salvador &#10070;</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
