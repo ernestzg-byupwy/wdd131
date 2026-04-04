@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color-one: rgb(57, 62, 65);
+    --primary-color-two: rgb(30, 32, 25);
+    --secondary-color-one: rgb(211, 208, 203);
+    --secondary-color-two: rgb(88, 123, 127);
+    --secondary-color-three: rgb(238, 238, 238);
+    --accent-color: rgb(226, 192, 68);
+    --header-footer-font-color: rgb(255, 255, 255);
+    --shadow-color-one: rgb(from var(--primary-color-one) r g b / 0.35)
+}
+
+body {
+    font-family: 'Cormorant', Arial, Helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+header,
+footer {
+    background-color: var(--primary-color-one);
+    color: var(--header-footer-font-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    position: relative;
+    padding: 1rem;
+    min-height: 4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    align-items: center;
+}
+
+/* Used to 'hide' the bare text node Temple Album when the Hamburger Menu 
+   is open that way the text doesn't interfere with the ul element
+*/
+header:has(.open) {
+    font-size: 0;
+}
+
+nav {
+    display: flex;
+    order: 3;
+}
+
+nav.open {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+#navigation.open {
+    display: flex;
+}
+
+#navigation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    justify-content: space-evenly;
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+#navigation li {
+    display: block;
+    text-align: center;
+
+    /* related to flex parent */
+    flex: 1 1 auto;
+}
+
+#navigation li a {
+    display: none;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem;
+}
+
+#navigation.open a {
+    display: block;
+}
+
+#navigation li a:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-color-one);
+    text-decoration: underline wavy;
+}
+
+#menu {
+    display: block;
+    font-weight: 600;
+    padding: 0.2rem;
+    width: 2rem;
+    height: 2rem;
+    background: none;
+    color: var(--header-footer-font-color);
+    align-self: center;
+    justify-self: end;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    /* default value for button elements is outset */
+    border-style: groove;
+}
+
+#menu::before {
+    content: "☰";
+    color: var(--header-footer-font-color);
+}
+
+#menu.open {
+    top: 1.25rem;
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+main h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.temple-card {
+    display: grid;
+    place-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    background-color: var(--secondary-color-three);
+}
+
+.temple-card h3 {
+    margin-top: 0.5rem;
+}
+
+.temple-card figure {
+    margin: 1rem 1rem 1.2rem;
+    width: calc(100% - 2rem);
+    max-width: 400px;
+}
+
+.temple-card img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1.59 / 1;
+    height: auto;
+    border: 1px solid var(--secondary-color-one);
+    box-shadow:
+        -3px -2px 5px var(--shadow-color-one),
+        3px 3px 5px var(--shadow-color-one);
+}
+
+.temple-card div {
+    display: grid;
+    column-gap: 0.25rem;
+    align-items: center;
+    font-size: 1rem;
+    min-height: 70px;
+    width: 100%;
+}
+
+.temple-card p {
+    font-weight: bolder;
+    font-size: 0.7rem;
+}
+
+.temple-card p .data-value {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+}

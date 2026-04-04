@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Album | WDD 131</title>
+    <meta name="author" content="Ernesto Zeledon">
+    <meta name="description"
+        content="Ernesto Zeledon's BYU-Idaho WDD 131 - Picture Album activity page, uses responsive web design principles to create an album page showing temple images.">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+    <!-- From previous activities to dynamically update the currentYear and  lastModified on the footer -->
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        Temple Album
+        <nav>
+            <ul id="navigation">
+                <li><a id="link-home" href="#">Home</a></li>
+                <li><a id="link-old" href="#">Old</a></li>
+                <li><a id="link-new" href="#">New</a></li>
+                <li><a id="link-large" href="#">Large</a></li>
+                <li><a id="link-small" href="#">Small</a></li>
+            </ul>
+        </nav>
+        <button type="button" id="menu" aria-label="Menu button"></button>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div id="gallery">
+            <!-- <div class="temple-card">
+                <figure>
+                    <img src="images/ss-sv-temple-small.jpg"
+                        alt="Picture of San Salvador, El Salvador Temple on afternoon." loading="lazy">
+                    <figcaption>
+                        <h2>San Salvador</h2>
+                        <dl class="details">
+                            <dt>LOCATION:</dt>
+                            <dd>La Libertad, El Salvador</dd>
+                            <dt>DEDICATED:</dt>
+                            <dd></dd>
+                            <dt>SIZE:</dt>
+                            <dd></dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+            </div> -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> &#10070; Ernesto Zeledon | El Salvador &#10070;</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
