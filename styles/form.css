@@ -1,0 +1,124 @@
+/* form.html specific styling mainly applied to the form */
+#pr-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 650px;
+    margin: 0 auto;
+    width: 95%;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border: var(--light-border);
+    border-radius: 5px;
+}
+
+#pr-form label,
+#pr-form div.input-container {
+    display: block;
+    width: min(400px, 100%);
+    margin-top: 1rem;
+}
+
+#pr-form select,
+#pr-form input[type="date"],
+#pr-form textarea,
+#pr-form input[type="text"],
+div.input-container,
+div#liked-features {
+    display: block;
+    width: min(400px, 100%);
+    max-width: 400px;
+    padding: .5rem;
+    margin-top: .2rem;
+}
+
+/* Stars Rating */
+
+#star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 400px;
+    /* margin: 1rem auto; */
+    position: relative;
+}
+
+#star-rating input {
+    display: none;
+}
+
+#star-rating>label {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    transition: 0.2s ease;
+}
+
+#star-rating label:hover {
+    color: var(--primary-color);
+    font-weight: bolder;
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+#star-rating label::before {
+    content: "\2606";
+    position: absolute;
+    text-align: center;
+    /* top: 0px; */
+    line-height: 26px;
+}
+
+#star-rating label:active::before {
+    transform: scale(1.2);
+}
+
+/* #star-rating label:has(input:checked)::before,
+#star-rating label:has(input:checked)~label::before {
+    content: "\2605";
+} */
+
+#star-rating :is(label:has(input:checked), label:has(input:checked)~label)::before {
+    content: "\2605";
+}
+
+/* End of Stars rating */
+
+#liked-features {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+#liked-features span.italic-font {
+    display: block;
+    font-style: italic;
+}
+
+#liked-features label {
+    margin-top: .5rem;
+}
+
+#liked-features input[type="checkbox"] {
+    margin-right: .5rem;
+}
+
+#pr-form span.optional-text-hint {
+    color: var(--font-option-hint-color);
+    margin-left: 0.2rem;
+}
+
+#pr-form textarea {
+    height: 5rem;
+}
+
+#pr-form input[type="submit"] {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem 0 1rem;
+    padding: .5rem;
+    font-weight: bolder;
+    font-size: 1rem;
+}
