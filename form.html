@@ -8,8 +8,9 @@
     <meta name="author" content="Ernesto Zeledon">
     <meta name="description"
         content="Ernesto Zeledon's BYU-Idaho WDD 131 - Dynamic Web Fundamentals, Week 05 Assignment: Product Review Form.">
-    <link rel="stylesheet" href="styles/form-review-base.css">
-    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-review/form-review-base.css">
+    <link rel="stylesheet" href="styles/form-review/form.css">
+    <link rel="stylesheet" href="styles/form-review/form-large.css">
 
     <script src="scripts/form.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
@@ -22,7 +23,7 @@
 
     <main>
         <form action="review.html" method="get" id="pr-form">
-            <label>Product Name
+            <label for="product-name">Product Name
                 <select name="productName" id="product-name" required>
                     <option value="" disabled selected>Select a Product ...</option>
                 </select>
@@ -30,30 +31,35 @@
 
             <div class="input-container">Overall Rating
                 <div id="star-rating">
-                    <label><input type="radio" name="rating" value="5" id="star-five" required></label>
-                    <label><input type="radio" name="rating" value="4" id="star-four" required></label>
-                    <label><input type="radio" name="rating" value="3" id="star-three" required></label>
-                    <label><input type="radio" name="rating" value="2" id="star-two" required></label>
-                    <label><input type="radio" name="rating" value="1" id="star-one" required></label>
+                    <label for="star-five"><input type="radio" name="rating" value="5" id="star-five" required></label>
+                    <label for="star-four"><input type="radio" name="rating" value="4" id="star-four" required></label>
+                    <label for="star-three"><input type="radio" name="rating" value="3" id="star-three"
+                            required></label>
+                    <label for="star-two"><input type="radio" name="rating" value="2" id="star-two" required></label>
+                    <label for="star-one"><input type="radio" name="rating" value="1" id="star-one" required></label>
                 </div>
             </div>
 
-            <label>Date of Installation<input type="date" name="installDate" id="install-date" required></label>
+            <label for="install-date">Date of Installation<input type="date" name="installDate" id="install-date"
+                    required></label>
 
             <div id="liked-features">
                 <div>Which feature did you find useful in the product?<span class="italic-font">(Check all that
                         apply)</span></div>
-                <label><input type="checkbox" name="durability" value="yes" id="feat-dur">Durability</label>
-                <label><input type="checkbox" name="easeOfUse" value="yes" id="feat-ease">Ease of Use</label>
-                <label><input type="checkbox" name="performance" value="yes" id="feat-per">Performance</label>
-                <label><input type="checkbox" name="design" value="yes" id="feat-desi">Design</label>
+                <label for="feat-dur"><input type="checkbox" name="durability" value="yes"
+                        id="feat-dur">Durability</label>
+                <label for="feat-ease"><input type="checkbox" name="easeOfUse" value="yes" id="feat-ease">Ease of
+                    Use</label>
+                <label for="feat-per"><input type="checkbox" name="performance" value="yes"
+                        id="feat-per">Performance</label>
+                <label for="feat-desi"><input type="checkbox" name="design" value="yes" id="feat-desi">Design</label>
             </div>
 
-            <label>Written Review<span class="optional-text-hint">(Optional)</span><textarea name="writtenReview"
-                    id="written-review"></textarea></label>
+            <label for="written-review">Written Review<span class="optional-text-hint">(Optional)</span><textarea
+                    name="writtenReview" id="written-review"></textarea></label>
 
-            <label>Your Name<span class="optional-text-hint">(Optional)</span><input type="text"
-                    name="reviewerName"></label>
+            <label for="">Your Name<span class="optional-text-hint">(Optional)</span><input type="text"
+                    name="reviewerName" id="reviewer-name"></label>
 
             <input type="submit" value="Post Review">
         </form>

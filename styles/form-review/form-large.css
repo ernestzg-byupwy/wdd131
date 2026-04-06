@@ -1,0 +1,15 @@
+@media screen and (min-width: 700px) {
+    main {
+        display: grid;
+        place-items: center;
+        min-height: fit-content;
+    }
+
+    #pr-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: 100%;
+        max-width: 650px;
+    }
+}
