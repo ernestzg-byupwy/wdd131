@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project | Ernesto Zeledon</title>
+    <meta name="author" content="Ernesto Zeledon">
+    <meta name="description"
+        content="Ernesto Zeledon's BYU-Idaho WDD 131 - Dynamic Web Fundamentals - Final Project Home Page.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+
+    <link rel="stylesheet" href="styles/content/about-tech.css">
+    <link rel="stylesheet" href="styles/content/about-tech-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/base.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="images/company-logo.png" alt="Company or Webpage Logo" width="50" height="auto" loading="lazy">
+        </div>
+        <nav>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html-about.html">HTML</a></li>
+                <li><a href="css-about.html">CSS</a></li>
+                <li class="in-view"><a href="javascript-about.html">JavaScript</a></li>
+                <li><a href="feedback.html">Give Feedback</a></li>
+            </ul>
+        </nav>
+        <div><i id="menu-icon">☰</i></div>
+    </header>
+    <div class="content-layout">
+        <main>
+            <div id="content-head">
+                <h1>JavaScript</h1>
+                <p>Role: <span>Behavior/Interaction</span></p>
+            </div>
+            <section class="inline-code">
+                <h2>History</h2>
+                <p>
+                    JavaScript was created by Brendan Eich in just 10 days in May 1995 while he was working at Netscape
+                    Communications. The goal was to create a lightweight scripting language that could run directly in
+                    the Netscape Navigator browser and make web pages interactive without requiring a server round-trip.
+                </p>
+                <p>
+                    Despite its rushed origin, JavaScript shipped in Netscape Navigator 2.0 in December 1995. Microsoft
+                    quickly reverse-engineered it and released their own implementation called JScript in Internet
+                    Explorer 3.0 in 1996 — beginning the browser compatibility wars.
+                </p>
+                <p>
+                    To standardize the language, Netscape submitted JavaScript to ECMA International in 1996. The
+                    result, published in 1997, was called ECMAScript (ES) — the official name of the language standard.
+                    JavaScript remains the most common name in practice.
+                </p>
+                <p>
+                    Progress was slow through the 2000s. ES3 (1999) was widely supported; ES4 was abandoned due to
+                    disagreements. ES5 (2009) brought important improvements like strict mode and array methods. ES6 —
+                    officially ES2015 — was a landmark release introducing <code>let</code>, <code>const</code>, arrow
+                    functions, classes,
+                    template literals, modules, and Promises.
+                </p>
+                <p>
+                    Since ES2015, the language has followed an annual release cycle. Today JavaScript runs not only in
+                    every browser but also on servers (Node.js), mobile apps, desktop applications, and even embedded
+                    systems. It is consistently ranked as the most widely-used programming language in the world.
+                </p>
+            </section>
+            <section class="inline-code">
+                <h2>Basic Syntax</h2>
+                <span>Including JavaScript in HTML</span>
+                <pre>
+                    <code>
+                        &lt;!-- Recommended: external file with defer --&gt;
+                        &lt;script src="scripts/main.js" defer&gt; &lt;/script&gt;
+                    </code>
+                </pre>
+                <p>The <code>defer</code> attribute ensures the HTML loads completely before the script runs.</p>
+            </section>
+
+            <section>
+                <h2>Anatomy of an Element</h2>
+                <pre>
+                    <code>
+                        &lt;tagname attribute="value"&gt;Content&lt;/tagname&gt;
+                        &emsp;&emsp;↑ &emsp;&emsp;&emsp;↑ &emsp;&emsp;&emsp;&emsp;&emsp;↑ &emsp;&emsp;&emsp;&emsp;↑
+                        opening &emsp;name&emsp;&emsp; &emsp;value&emsp;&emsp;content
+                        tag
+                    </code>
+                </pre>
+            </section>
+
+        </main>
+        <aside>
+            <h3>Quick Facts About JavaScript</h3>
+            <img src="images/logos/js-logo.png" alt="HTML Logo" width="125" height="auto" loading="lazy">
+            <dl>
+                <dt>Full Name:</dt>
+                <dd>JavaScript (officially ECMAScript)</dd>
+                <dt>Created by:</dt>
+                <dd>Brendan Eich</dd>
+                <dt>Year created:</dt>
+                <dd>1995</dd>
+                <dt>Created at:</dt>
+                <dd>Netscape Communications, USA</dd>
+                <dt>Current version:</dt>
+                <dd>ES2024 (ECMAScript 2024)</dd>
+                <dt>Maintained by:</dt>
+                <dd>ECMA International (TC39 committee)</dd>
+                <dt>File extension:</dt>
+                <dd>.js</dd>
+                <dt>Type:</dt>
+                <dd>High-level, interpreted programming language</dd>
+                <dt>Official spec:</dt>
+                <dd><a href="https://ecma-international.org/" target="_blank">ecma-international.org</a></dd>
+            </dl>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> &#10070; Ernesto Zeledon | El Salvador &#10070;</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

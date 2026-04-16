@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project | Ernesto Zeledon</title>
+    <meta name="author" content="Ernesto Zeledon">
+    <meta name="description"
+        content="Ernesto Zeledon's BYU-Idaho WDD 131 - Dynamic Web Fundamentals - Final Project Home Page.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/base-large.css">
+
+    <link rel="stylesheet" href="styles/content/about-tech.css">
+    <link rel="stylesheet" href="styles/content/about-tech-large.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/base.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="images/company-logo.png" alt="Company or Webpage Logo" width="50" height="auto" loading="lazy">
+        </div>
+        <nav>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li class="in-view"><a href="html-about.html">HTML</a></li>
+                <li><a href="css-about.html">CSS</a></li>
+                <li><a href="javascript-about.html">JavaScript</a></li>
+                <li><a href="feedback.html">Give Feedback</a></li>
+            </ul>
+        </nav>
+        <div><i id="menu-icon">☰</i></div>
+    </header>
+    <div class="content-layout">
+        <main>
+            <div id="content-head">
+                <h1>HTML</h1>
+                <p>Role: <span>Structure</span></p>
+            </div>
+            <section>
+                <h2>History</h2>
+                <p>
+                    HTML was invented by Tim Berners-Lee in 1991 while working at CERN, the European physics laboratory
+                    in
+                    Switzerland. His
+                    original goal was simple: create a way for scientists to share documents over a network. The first
+                    version supported
+                    only 18 elements, mostly for headings, paragraphs, and links.
+                </p>
+                <p>
+                    In 1995, HTML 2.0 became the first formally published standard, followed by HTML 3.2 and HTML 4.01
+                    in
+                    the late 1990s as
+                    the web grew rapidly in popularity. During this era, browsers like Netscape and Internet Explorer
+                    often
+                    introduced their
+                    own proprietary tags, leading to significant compatibility headaches for developers.
+                </p>
+                <p>
+                    In 2000, the W3C (World Wide Web Consortium) introduced XHTML, a stricter, XML-based reformulation
+                    of
+                    HTML. It aimed to
+                    enforce better coding discipline, but its rigidity made it difficult to adopt widely.
+                </p>
+                <p>
+                    The most significant leap came with HTML5, whose development began around 2004 led by the WHATWG — a
+                    group formed by
+                    Apple, Mozilla, and Opera in response to the W3C's direction. HTML5 introduced native support for
+                    audio,
+                    video, the
+                    canvas element, semantic elements, and much more. It was officially published in 2014 and is now
+                    maintained as a "Living
+                    Standard," meaning it is continuously updated rather than released in fixed versions.
+                </p>
+                <p>Today HTML is the backbone of every webpage on the internet.</p>
+            </section>
+            <section>
+                <h2>Basic Syntax</h2>
+                <pre>
+                    <code>
+                        <span>&lt;!DOCTYPE html&gt;</span>
+                        &lt;html lang="en"&gt;
+                        &emsp;&lt;head&gt;
+                            &emsp;&emsp;&lt;meta charset="UTF-8"&gt;
+                            &emsp;&emsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                            &emsp;&emsp;&lt;title&gt;Page Title&lt;/title&gt;
+                        &lt;/head&gt;
+                        &lt;body&gt;
+                        &emsp;&lt;h1&gt;Hello, World!&lt;/h1&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Anatomy of an Element</h2>
+                <pre>
+                    <code>
+                        &lt;tagname attribute="value"&gt;Content&lt;/tagname&gt;
+                        &emsp;&emsp;↑ &emsp;&emsp;&emsp;↑ &emsp;&emsp;&emsp;&emsp;&emsp;↑ &emsp;&emsp;&emsp;&emsp;↑
+                        opening &emsp;name&emsp;&emsp; &emsp;value&emsp;&emsp;content
+                        tag
+                    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Common Elements</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="inline">
+                                <code>&lt;h1&gt;</code> <span>–</span> <code>&lt;h6&gt;</code>
+                            </td>
+                            <td>Headings (h1 = most important)</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;p&gt;</code></td>
+                            <td>Paragraph</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;a href=""&gt;</code></td>
+                            <td>Hyperlink</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;img src="" alt=""&gt;</code></td>
+                            <td>Image (void element — no closing tag)</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;ul&gt; / &lt;ol&gt; / &lt;li&gt;</code></td>
+                            <td>Unordered / ordered list / list item</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <code>&lt;div&gt;</code>
+                            </td>
+                            <td>Generic block container</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;span&gt;</code></td>
+                            <td>Generic inline container</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>Semantic Elements</h2>
+                <p>Semantic elements describe their meaning to the browser and developers alike:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Element</th>
+                            <th>Meaning</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <code>&lt;header&gt;</code>
+                            </td>
+                            <td>Introductory content or nav group</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;nav&gt;</code></td>
+                            <td>Navigation links</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;main&gt;</code></td>
+                            <td>Primary content of the page</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;section&gt;</code></td>
+                            <td>Thematic grouping of content</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;article&gt;</code></td>
+                            <td>Self-contained content</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;aside&gt;</code>
+                            </td>
+                            <td>Secondary/sidebar content</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;footer&gt;</code></td>
+                            <td>Generic inline container</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="inline-code">
+                <h2>Void Elements (self-closing)</h2>
+                <p>
+                    These elements have no content and no closing tag:
+                    <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>, <code>&lt;img&gt;</code>,
+                    <code>&lt;input&gt;</code>,
+                    <code>&lt;link&gt;</code>, <code>&lt;meta&gt;</code>
+                    <code>&lt;link&gt;</code>, <code>&lt;meta&gt;</code>
+                </p>
+                <br><br>
+            </section>
+        </main>
+        <aside>
+            <h3>Quick Facts About HTML</h3>
+            <img src="images/logos/html-logo.png" alt="HTML Logo" width="125" height="auto" loading="lazy">
+            <dl>
+                <dt>Full Name:</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>Created by:</dt>
+                <dd>Tim Berners-Lee</dd>
+                <dt>Year created:</dt>
+                <dd>1991</dd>
+                <dt>Created at:</dt>
+                <dd>CERN, Switzerland</dd>
+                <dt>Current version:</dt>
+                <dd>HTML5 (Living Standard)</dd>
+                <dt>Maintained by:</dt>
+                <dd>WHATWG <br> (Web Hypertext Application Technology Working Group)</dd>
+                <dt>File extension:</dt>
+                <dd>.html, .htm</dd>
+                <dt>Type:</dt>
+                <dd>Markup Language</dd>
+                <dt>Official spec:</dt>
+                <dd><a href="https://html.spec.whatwg.org/" target="_blank">html.spec.whatwg.org</a></dd>
+            </dl>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy;<span id="currentYear"></span> &#10070; Ernesto Zeledon | El Salvador &#10070;</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

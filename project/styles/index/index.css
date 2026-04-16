@@ -1,0 +1,48 @@
+/* For Contents Inside the <main> tag on the Index Page */
+main #hero-banner {
+    color: rgb(255, 255, 255);
+    place-items: center;
+    text-align: center;
+    min-height: 300px;
+    padding: 2.5rem;
+    background: linear-gradient(45deg, rgba(10, 28, 64, 1) 0%, rgba(10, 28, 64, 1) 65%, rgba(13, 140, 166, 1) 100%);
+
+    background: linear-gradient(45deg, rgba(10, 28, 64, 1) 0%, rgb(15 44 103) 45%, rgb(2 87 105) 100%);
+}
+
+#hero-banner h1 {
+    margin-bottom: 3rem;
+}
+
+.topic-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.topic-section h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.topic-section p {
+    max-width: 80%;
+}
+
+#btn-html {
+    color: rgba(255, 255, 255);
+    background-color: var(--accent-color-one);
+}
+
+#btn-css {
+    color: rgb(255, 255, 255);
+    background-color: var(--accent-color-two);
+}
+
+#btn-js {
+    color: rgb(255, 255, 255);
+    background-color: var(--accent-color-three);
+}

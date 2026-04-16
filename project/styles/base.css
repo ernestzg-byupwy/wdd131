@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: rgb(10, 28, 64);
+    --secondary-color: rgb(36, 122, 59);
+    --accent-color-one: rgb(217, 73, 41);
+    --accent-color-two: rgb(15, 124, 191);
+    --accent-color-three: rgb(242, 191, 38);
+
+    --soft-shadow-color: rgba(100, 100, 100, 0.8);
+}
+
+body {
+    font-family: 'Roboto', 'Courier New', Courier, monospace;
+    min-width: fit-content;
+}
+
+header,
+main,
+aside,
+footer,
+.content-layout {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    font-size: 1.25rem;
+}
+
+header,
+footer {
+    color: rgb(255, 255, 255);
+    background-color: var(--primary-color);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 66px;
+    padding: 0 1rem 0;
+}
+
+#logo-container {
+    max-width: min-content;
+    padding: 0.5rem;
+}
+
+header nav {
+    width: stretch;
+}
+
+header:has(.open) {
+    display: grid;
+    grid-template-columns: 1fr 3fr 0.25fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+#navigation {
+    display: none;
+    flex-direction: column;
+    width: stretch;
+    height: 100%;
+    list-style-type: none;
+}
+
+header nav.open {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+#navigation.open {
+    display: flex;
+}
+
+header nav ul li {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+header nav ul li:hover {
+    background-color: rgb(2 87 105);
+}
+
+header .in-view {
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+header .in-view:hover {
+    border-bottom: 5px solid var(--accent-color-three);
+}
+
+header div,
+header div i {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 25px;
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+}
+
+header div:has(#menu-icon) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    place-items: center;
+    place-self: center;
+}
+
+header ul a {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    text-decoration: none;
+    margin: auto;
+    color: inherit;
+    line-height: 100%;
+}
+
+/* Main Section */
+/* main {
+    min-height: 75dvh;
+} */
+
+.action-button {
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--secondary-color);
+    padding: .75rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px var(--soft-shadow-color);
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+}

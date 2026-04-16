@@ -1,0 +1,16 @@
+@media screen and (min-width: 600px) {
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        width: stretch;
+        justify-content: flex-end;
+        height: 100%;
+        list-style-type: none;
+    }
+
+    header div:has(#menu-icon) {
+        display: none;
+    }
+
+}

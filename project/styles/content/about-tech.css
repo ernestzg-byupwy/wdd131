@@ -1,0 +1,140 @@
+.content-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    padding: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    padding: 1rem;
+}
+
+main {
+
+    code {
+        margin: .1rem auto;
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+
+    section h2 {
+        margin-bottom: 1rem;
+    }
+
+    section p {
+        margin: 0 1rem;
+        padding: 1rem 0;
+    }
+
+    section figure {
+        width: 50%;
+
+        img {
+            width: 350px;
+        }
+    }
+
+    section.inline-code {
+        code {
+            display: inline-block;
+            padding: 0.5rem;
+        }
+    }
+
+    pre,
+    table {
+        max-width: 90%;
+        margin: 1rem auto 2rem;
+        white-space: normal;
+        padding: .2rem;
+    }
+
+    code {
+        display: block;
+        font-family: 'Cascadia Code';
+        font-size: 0.8rem;
+        white-space: pre-line;
+        background-color: rgb(40, 40, 40);
+        color: rgb(255, 255, 255);
+        padding: 0 1rem 1rem;
+    }
+}
+
+main table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1rem;
+
+    td {
+        padding: 1rem;
+        align-items: center;
+        justify-items: center;
+    }
+
+    td.inline * {
+        display: inline-block;
+    }
+
+    code {
+
+        padding: 0.5rem;
+        border-radius: 10px;
+        text-align: center;
+        width: max-content;
+    }
+}
+
+#content-head {
+    text-align: center;
+}
+
+#content-head span {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1 / 2;
+    justify-items: center;
+    padding: 2rem 0.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(from var(--accent-color-one) r g b / 0.75);
+    height: min-content;
+    /* width: min-content; */
+    max-width: 90%;
+
+    h3 {
+        text-align: center;
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+        padding: 0 0 .5rem;
+        border-bottom: 2px dashed var(--accent-color-one);
+    }
+
+    img {
+        margin: 1rem auto;
+    }
+}
+
+aside dl {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 0.5rem;
+    column-gap: 0.2rem;
+    padding: .5rem;
+}
+
+aside dl dt,
+aside dl dd {
+    font-size: 1rem;
+}
+
+aside dl dt {
+    /* font-size: 1rem; */
+    font-weight: bolder;
+}
